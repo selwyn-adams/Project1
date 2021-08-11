@@ -159,4 +159,3 @@ SSH into the control node and follow the steps below:
 	- Answer: You update the ansible.cfg file found in /etc/ansible in order to run on a specific machine
 - _Which URL do you navigate to in order to check that the ELK server is running?
 	- Answer:  _http://[your.ELK-VM.External.IP]:5601/app/kibana_
-	- 
