@@ -62,7 +62,6 @@ Only the *ELK*  machine can accept connections from the Internet. Access to this
 - User Workstation: IP 99.233.X.X via TCP 5601
 
 Machines within the network can only be accessed by *Jump* *Box*.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 - *Jump* *Box* machine from internal IP: 10.1.1.4 via SSH on port 22
 - *User* *Workstation* public IP via TCP on port 5601
@@ -149,11 +148,10 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [ELK Playbook](Ansible/elk.yml file to the ansible folder of your control node.
-- Update the elk.yml file to include 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the [ELK Playbook](Ansible/elk.yml) file to the ansible folder of your control node.
+- Update the elk.yml file to include the ELk Server and it's IP address.
+- Run the playbook, and navigate to ELK server's IP address to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 	- Answer: The elk.yml file is the playbook file. It is by ansible  and has a .yml extension. You copy this file to your ansible folder found in etc/ansible.
 
@@ -161,5 +159,4 @@ _TODO: Answer the following questions to fill in the blanks:_
 	- Answer: You update the ansible.cfg file found in /etc/ansible in order to run on a specific machine
 - _Which URL do you navigate to in order to check that the ELK server is running?
 	- Answer:  _http://[your.ELK-VM.External.IP]:5601/app/kibana_
-	
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+	- 
