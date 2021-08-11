@@ -8,11 +8,11 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the *ansible* *yml* and *config* *file* may be used to install only certain pieces of it, such as Filebeat.
 
 - [Ansible Configuration](Ansible/ansible.cfg)
-- [Web Server Installation](https://github.com/selwyn-adams/Project1.git/Ansible/apache2_install_webserver.yml)
-- [Docker Playbook](https://github.com/selwyn-adams/Project1.git/Ansible/docker-playbook.yml)
-- [ELK Playbook](https://github.com/selwyn-adams/Project1.git/Ansible/elk.yml)
-- [Ansible Hosts](https://github.com/selwyn-adams/Project1.git/Ansible/hosts)
-- [Python 3 Playbook](https://github.com/selwyn-adams/Project1.git/Ansible/pythn3-playbook.yml)
+- [Web Server Installation](Ansible/apache2_install_webserver.yml)
+- [Docker Playbook](Ansible/docker-playbook.yml)
+- [ELK Playbook](Ansible/elk.yml)
+- [Ansible Hosts](Ansible/hosts)
+- [Python 3 Playbook](Ansible/pythn3-playbook.yml)
   
 
 This document contains the following details:
@@ -44,7 +44,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - What does Metricbeat record? *Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.*
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     		| Function   	| IP Address 		    	| Operating System |
 |-----------------------|---------------|-------------------------------|------------------|
@@ -150,7 +149,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [ELK Playbook](https://github.com/selwyn-adams/Project1.git/Ansible/elk.yml file to the ansible folder of your control node.
+- Copy the [ELK Playbook](Ansible/elk.yml file to the ansible folder of your control node.
 - Update the elk.yml file to include 
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
